@@ -1,6 +1,6 @@
 Name:           plexus-build-api
 Version:        0.0.6
-Release:        4
+Release:        6
 Summary:        Plexus Build API
 
 Group:          Development/Java
