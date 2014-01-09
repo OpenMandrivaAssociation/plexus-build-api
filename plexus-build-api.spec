@@ -1,7 +1,7 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:           plexus-build-api
 Version:        0.0.7
-Release:        9.0%{?dist}
+Release:        9.1%{?dist}
 Summary:        Plexus Build API
 
 
