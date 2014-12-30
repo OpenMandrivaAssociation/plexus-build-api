@@ -1,9 +1,9 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           plexus-build-api
 Version:        0.0.7
-Release:        9.1%{?dist}
+Release:        13.1
 Summary:        Plexus Build API
-
+Group:          Development/Java
 
 License:        ASL 2.0
 URL:            https://github.com/sonatype/sisu-build-api
@@ -34,7 +34,7 @@ BuildRequires: junit
 BuildRequires: plexus-containers-component-metadata
 BuildRequires: maven-shared-reporting-impl
 BuildRequires: plexus-digest
-BuildRequires: maven-surefire-provider-junit4
+BuildRequires: maven-surefire-provider-junit
 
 Requires: plexus-containers-container-default
 Requires: plexus-utils
@@ -78,11 +78,9 @@ install -pm 644 pom.xml \
 install -d -m 0755 %{buildroot}%{_javadocdir}/plexus/%{name}
 cp -pr target/site/api*/* %{buildroot}%{_javadocdir}/plexus/%{name}/
 
-%files
+%files -f .mfiles
 %doc LICENSE-2.0.txt
 %{_javadir}/plexus/*
-%{_mavenpomdir}/*
-%{_mavendepmapfragdir}/*
 
 %files javadoc
 %doc LICENSE-2.0.txt
