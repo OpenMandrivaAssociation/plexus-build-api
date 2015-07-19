@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           plexus-build-api
 Version:        0.0.7
-Release:        13.1
+Release:        13.2
 Summary:        Plexus Build API
 Group:          Development/Java
 
