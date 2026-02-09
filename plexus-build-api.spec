@@ -1,5 +1,5 @@
 Name:           plexus-build-api
-Version:        0.0.7
+Version:        1.2.0
 Release:        1
 Summary:        Plexus Build API
 License:        Apache-2.0
